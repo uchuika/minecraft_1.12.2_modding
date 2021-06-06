@@ -1,8 +1,10 @@
 package com.uchuika.simplefactory;
 
+import com.uchuika.simplefactory.objects.Tabs.IngotTab;
 import com.uchuika.simplefactory.proxy.CommonProxy;
 import com.uchuika.simplefactory.util.Reference;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -14,6 +16,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class Main {
 
+	//クリエイティブタブの登録
+	public static final CreativeTabs INGOT = new IngotTab(12, "ingot");
+	
 	@Instance
 	public static Main instance;
 

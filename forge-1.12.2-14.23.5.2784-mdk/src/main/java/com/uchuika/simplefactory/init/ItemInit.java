@@ -11,5 +11,6 @@ public class ItemInit {
 
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
+	//アイテムの登録
 	public static final Item COPPER_INGOT = new ItemBase("copper_ingot");
 }
